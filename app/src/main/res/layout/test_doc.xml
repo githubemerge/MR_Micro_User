@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <fragment
+                        android:id="@+id/map_currentloctations"
+                        android:name="com.google.android.gms.maps.SupportMapFragment"
+                        android:layout_width="match_parent"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_height="170dp" />
+
+                    <emerge.project.mrsolution_micro.ui.fonts.MontserratMedium
+                        android:id="@+id/text_name_hint"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="40dp"
+                        android:layout_below="@+id/map_currentloctations"
+                        android:layout_marginTop="10dp"
+                        android:enabled="false"
+                        android:text="Name of the location"
+                        android:textColor="#000000"
+                        android:textSize="12sp"
+                        android:visibility="invisible" />
+
+
+                    <emerge.project.mrsolution_micro.ui.fonts.MontserratRegularEdittext
+                        android:id="@+id/edittext_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_below="@+id/text_name_hint"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginLeft="40dp"
+                        android:layout_marginRight="40dp"
+                        android:background="@color/color_edittext_background"
+                        android:ems="10"
+                        android:hint="Name of the location *"
+                        android:inputType="textPersonName"
+                        android:textColor="#2b2b2b"
+                        android:textColorHint="#ababab"
+                        android:textSize="16sp" />
+
+
+                    <View
+                        android:id="@+id/divider_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_below="@+id/edittext_name"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginLeft="40dp"
+                        android:layout_marginRight="40dp"
+                        android:background="@color/colorAccent" />
+
+
+
+                    <emerge.project.mrsolution_micro.ui.fonts.MontserratMedium
+                        android:id="@+id/text_addres_hint"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/divider_name"
+                        android:layout_marginLeft="40dp"
+                        android:layout_marginTop="10dp"
+                        android:enabled="false"
+                        android:text="Address"
+                        android:textColor="#000000"
+                        android:textSize="12sp"
+                        android:visibility="invisible" />
+
+
+                    <emerge.project.mrsolution_micro.ui.fonts.MontserratRegularEdittext
+                        android:id="@+id/edittext_addres"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_below="@+id/text_addres_hint"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginLeft="40dp"
+                        android:layout_marginRight="40dp"
+                        android:background="@color/color_edittext_background"
+                        android:ems="10"
+                        android:hint="Address *"
+                        android:inputType="textPersonName"
+                        android:textColor="#2b2b2b"
+                        android:textColorHint="#ababab"
+                        android:textSize="17sp" />
+
+
+                    <View
+                        android:id="@+id/divider_addres"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_below="@+id/edittext_addres"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginLeft="40dp"
+                        android:layout_marginRight="40dp"
+                        android:background="@color/colorAccent" />
+
+
+
+                    <emerge.project.mrsolution_micro.ui.fonts.MontserratMedium
+                        android:id="@+id/text_area_hint"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/divider_addres"
+                        android:layout_marginLeft="40dp"
+                        android:layout_marginTop="10dp"
+                        android:enabled="false"
+                        android:text="Area"
+                        android:textColor="#000000"
+                        android:textSize="12sp"
+                        android:visibility="invisible" />
+
+
+                    <emerge.project.mrsolution_micro.ui.fonts.MontserratRegularEdittext
+                        android:id="@+id/edittext_area"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_below="@+id/text_area_hint"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginLeft="40dp"
+                        android:layout_marginRight="40dp"
+                        android:background="@color/color_edittext_background"
+                        android:ems="10"
+                        android:hint="Area *"
+                        android:inputType="textPersonName"
+                        android:textColor="#2b2b2b"
+                        android:textColorHint="#ababab"
+                        android:textSize="17sp" />
+
+                    <View
+                        android:id="@+id/divider_area"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_below="@+id/edittext_area"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginLeft="40dp"
+                        android:layout_marginRight="40dp"
+                        android:background="@color/colorAccent" />
+
+
+                    <emerge.project.mrsolution_micro.ui.fonts.MontserratMedium
+                        android:id="@+id/text_town_hint"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/divider_area"
+                        android:layout_marginLeft="40dp"
+                        android:layout_marginTop="10dp"
+                        android:enabled="false"
+                        android:hint="Town"
+                        android:textColor="#000000"
+                        android:textSize="12sp"
+                        android:visibility="invisible" />
+
+
+                    <emerge.project.mrsolution_micro.ui.fonts.MontserratRegularEdittext
+                        android:id="@+id/edittext_town"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_below="@+id/text_town_hint"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginLeft="40dp"
+                        android:layout_marginRight="40dp"
+                        android:background="@color/color_edittext_background"
+                        android:ems="10"
+                        android:hint="Town *"
+                        android:inputType="textPersonName"
+                        android:textColor="#2b2b2b"
+                        android:textColorHint="#ababab"
+                        android:textSize="17sp" />
+
+                    <View
+                        android:id="@+id/divider_town"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_below="@+id/edittext_town"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginLeft="40dp"
+                        android:layout_marginRight="40dp"
+                        android:background="@color/colorAccent" />
+
+
+                    <emerge.project.mrsolution_micro.ui.fonts.MontserratMedium
+                        android:id="@+id/text_addres_number_hint"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/divider_town"
+                        android:layout_marginLeft="40dp"
+                        android:layout_marginTop="10dp"
+                        android:enabled="false"
+                        android:hint="District"
+                        android:textColor="#000000"
+                        android:textSize="12sp"
+                        android:visibility="invisible" />
+
+
+
+
+                    <emerge.project.mrsolution_micro.ui.fonts.MontserratRegularAutoComlete
+                        android:id="@+id/autoCompleteemerge.project.mrsolution.ui.fonts.MontserratMedium_district"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:hint="District *"
+                        android:layout_below="@+id/text_addres_number_hint"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginLeft="40dp"
+                        android:layout_marginRight="40dp"
+                        android:textColor="#2b2b2b"
+                        android:textColorHint="#ababab"
+                        android:textSize="17sp"
+                        android:background="@color/color_edittext_background" />
+
+
+                    <View
+                        android:id="@+id/divider_floor"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_below="@+id/autoCompleteemerge.project.mrsolution.ui.fonts.MontserratMedium_district"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginLeft="40dp"
+                        android:layout_marginRight="40dp"
+                        android:background="@color/colorAccent" />
+
+
+
+                    <emerge.project.mrsolution_micro.ui.fonts.MontserratRegularButton
+                        android:id="@+id/button3"
+                        android:layout_below="@+id/divider_floor"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="30dp"
+                        android:layout_marginLeft="40dp"
+                        android:layout_marginRight="40dp"
+                        android:layout_marginBottom="20dp"
+                        android:textColor="@color/colorWhite"
+                        android:background="@drawable/bg_selector_primary"
+                        android:text="ADD LOCATION" />
+
+
+
+
+
+                </RelativeLayout>
+            </LinearLayout>
+        </ScrollView>
+
+
+
+
+
+
+
+
+
+
+
+    </RelativeLayout>
+
+
+
+</android.support.constraint.ConstraintLayout>
